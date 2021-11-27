@@ -1,0 +1,60 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+#three-ds-container {
+    width: 550px;
+    height: 450px;
+    line-height: 200px;
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+.help-block.form-error {
+    margin-bottom: 1px;
+    margin-top: 2px;
+	color:#a94442;
+	font-size:12px;
+}
+
+#three-ds-container iframe{
+border: none;
+}
+
+@media only screen and (max-width : 480px) 
+{
+
+#three-ds-container{
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
+margin: 0;
+line-height: normal;
+text-align: left;
+height: 100%;
+}
+
+#three-ds-container iframe{
+width: 100%;
+margin-top: 20%;
+}
+
+iframe table{
+width:100% !important;
+}
+
+}
