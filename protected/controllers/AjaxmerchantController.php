@@ -273,8 +273,8 @@ class AjaxmerchantController extends CController
 
 	public function actionLoadTableRates()
 	{
-
 		$mtid = Yii::app()->functions->getMerchantID();
+
 		if (!empty($mtid)) {
 			if ($res = FunctionsV3::GetLocationRateByMerchantWithName($mtid)) {
 
